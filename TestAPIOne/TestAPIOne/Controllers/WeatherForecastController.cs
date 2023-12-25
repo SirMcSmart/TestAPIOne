@@ -30,7 +30,7 @@ namespace TestAPIOne.Controllers
             .ToArray();
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet(Name = "GetWeatherForecast/{weather}")]
         public IEnumerable<WeatherForecast> Get(string weather)
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
