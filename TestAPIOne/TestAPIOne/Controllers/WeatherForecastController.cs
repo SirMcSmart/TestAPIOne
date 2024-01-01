@@ -31,28 +31,6 @@ namespace TestAPIOne.Controllers
             .ToArray();
         }
 
-        //[HttpGet(Name = "GetWeatherForecast2/{weather}")]
-        //public IEnumerable<WeatherForecast> GetWeatherForecast2(string weather)
-        //{
-        //    return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        //    {
-        //        Date = DateTime.Now.AddDays(index),
-        //        TemperatureC = Random.Shared.Next(-20, 55),
-        //        Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        //    })
-        //    .ToArray();
-        //}
-        //[HttpGet(Name = "GetCountryWeatherForecast")]
-        //public IEnumerable<WeatherForecast> GetCountryWeatherForecast(string request)
-        //{
-        //    return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        //    {
-        //        Date = DateTime.Now.AddDays(index),
-        //        TemperatureC = Random.Shared.Next(-20, 55),
-        //        Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        //    })
-        //    .ToArray();
-        //}
 
         [Route("CheckValidEmail")]
         [HttpPost]
