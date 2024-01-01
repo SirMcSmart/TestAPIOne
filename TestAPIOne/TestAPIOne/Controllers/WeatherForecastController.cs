@@ -56,7 +56,7 @@ namespace TestAPIOne.Controllers
 
         [Route("CheckValidEmail")]
         [HttpPost]
-        public async Task<IActionResult> CheckValidEmail(string email)
+        public async Task<IActionResult> CheckValidEmail(string email, string tester)
         {
             string expresion;
             expresion = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
